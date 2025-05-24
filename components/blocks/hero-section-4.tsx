@@ -5,7 +5,6 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { InfiniteSlider } from "@/components/ui/infinite-slider";
 import { ProgressiveBlur } from "@/components/ui/progressive-blur";
-import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { Icons } from "../icons";
 import Image from "next/image";
@@ -66,7 +65,7 @@ export function HeroSection() {
                 </p>
               </div>
               <div className="relative py-6 md:w-[calc(100%-11rem)]">
-                <InfiniteSlider speedOnHover={20} speed={40} gap={112}>
+                <InfiniteSlider durationOnHover={100} duration={40} gap={112}>
                   <div className="flex">
                     <img
                       className="mx-auto h-5 w-fit dark:invert"
