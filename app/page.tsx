@@ -6,12 +6,26 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { ArrowRight, Phone, Mail, MapPin } from "lucide-react";
+import {
+  ArrowRight,
+  Phone,
+  Mail,
+  MapPin,
+  Gamepad2Icon,
+  PhoneIcon,
+  TabletSmartphone,
+  BrainCog,
+  MonitorSmartphone,
+} from "lucide-react";
+import { HeroSection } from "@/components/blocks/hero-section-4";
 
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <div className="flex items-center bg-primary-foreground">
+      <HeroSection />
+
+      {/* old header */}
+      {/* <div className="flex items-center bg-primary-foreground">
         <div className="container relative z-10 mx-auto px-4 py-32 flex flex-col items-center text-center space-y-8">
           <h1 className="text-6xl font-extrabold tracking-tight bg-gradient-to-r from-white via-primary to-white bg-clip-text text-transparent">
             We Build What We Dream
@@ -28,7 +42,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* About/Philosophy Section */}
       <section className="container mx-auto px-4 py-20">
@@ -50,7 +64,7 @@ export default function Home() {
           <div className="flex-1 flex justify-center">
             <div className="relative w-64 h-64 rounded-2xl overflow-hidden shadow-lg bg-secondary/60">
               <Image
-                src="/chatflow-logo.svg"
+                src="/chatflow.svg"
                 alt="Chatflow Logo"
                 fill
                 className="object-contain p-8"
@@ -77,14 +91,14 @@ export default function Home() {
       </section>
 
       {/* Portfolio Section */}
-      <section className="container mx-auto px-4 py-20">
+      {/* <section className="container mx-auto px-4 py-20">
         <h2 className="text-3xl font-bold mb-8 text-center">Our Startups</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center">
             <CardHeader>
               <div className="flex justify-center mb-4">
                 <Image
-                  src="/chatflow-logo.svg"
+                  src="/chatflow.svg"
                   alt="Chatflow"
                   width={56}
                   height={56}
@@ -129,7 +143,7 @@ export default function Home() {
             </CardHeader>
           </Card>
         </div>
-      </section>
+      </section> */}
 
       {/* Leadership Section */}
       <section className="container mx-auto px-4 py-20">
@@ -215,53 +229,29 @@ export default function Home() {
       <section className="container mx-auto px-4 py-20">
         <h2 className="text-3xl font-bold mb-8 text-center">What We Build</h2>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8">
-            <Image
-              src="/game-dev.svg"
-              alt="Game Development"
-              width={56}
-              height={56}
-              className="mb-4"
-            />
+          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8 hover:bg-secondary/90 transition-all duration-300">
+            <Gamepad2Icon className="mb-4" size={56} />
             <CardTitle>Game Development</CardTitle>
             <CardDescription>
               Immersive, creative, and fun games for mobile and web.
             </CardDescription>
           </Card>
-          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8">
-            <Image
-              src="/mobile-apps.svg"
-              alt="Mobile Apps"
-              width={56}
-              height={56}
-              className="mb-4"
-            />
+          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8 hover:bg-secondary/90 transition-all duration-300">
+            <TabletSmartphone className="mb-4" size={56} />
             <CardTitle>Mobile Apps</CardTitle>
             <CardDescription>
               Beautiful, high-performance apps for iOS and Android.
             </CardDescription>
           </Card>
-          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8">
-            <Image
-              src="/ai.svg"
-              alt="AI"
-              width={56}
-              height={56}
-              className="mb-4"
-            />
+          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8 hover:bg-secondary/90 transition-all duration-300">
+            <BrainCog className="mb-4" size={56} />
             <CardTitle>AI</CardTitle>
             <CardDescription>
               AI-powered products and features that make a difference.
             </CardDescription>
           </Card>
-          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8">
-            <Image
-              src="/web-apps.svg"
-              alt="Web Apps"
-              width={56}
-              height={56}
-              className="mb-4"
-            />
+          <Card className="bg-secondary/80 border-0 flex flex-col items-center text-center p-8 hover:bg-secondary/90 transition-all duration-300">
+            <MonitorSmartphone className="mb-4" size={56} />
             <CardTitle>Web Apps</CardTitle>
             <CardDescription>
               Modern, scalable web applications for the US market.
