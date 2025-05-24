@@ -1,18 +1,12 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import {
-  Card,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import {
   ArrowRight,
   Phone,
   Mail,
   MapPin,
   Gamepad2Icon,
-  PhoneIcon,
   TabletSmartphone,
   BrainCog,
   MonitorSmartphone,
